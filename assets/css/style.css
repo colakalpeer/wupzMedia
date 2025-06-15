@@ -348,9 +348,24 @@ body.nav-active { overflow:hidden; }
   #WORK
 \*-----------------------------------*/
 
+.work-card .card-banner {
+  border-radius: var(--radius-40);
+  margin-block-end: 20px;
+}
 
+.work-card:is(:hover, :focus-within) .img-cover { transform: scale (1.1); }
 
+.work-card .card-title {
+  margin-block-end: 12px;
+  transition: var(--transition-1);
+}
 
+.work-card .card-title:is(:hover, :focus-visible) { color:var(--text-sunglow);}
+
+.works .btn {
+  margin-block-start: 60px;
+  margin-inline: auto;
+}
 
 /*-----------------------------------*\
   #FOOTER

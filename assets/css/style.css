@@ -177,6 +177,15 @@ body.nav-active { overflow:hidden; }
 
 .w-100 { width: 100%; }
 
+.text-center { text-align: center; }
+
+.section-text { margin-block: 15px 50px; }
+
+.grid-list {
+  display: grid;
+  gap: 50px;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -249,11 +258,6 @@ body.nav-active { overflow:hidden; }
 
 
 
-
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -296,7 +300,34 @@ body.nav-active { overflow:hidden; }
   #PROCESS
 \*-----------------------------------*/
 
+.process-banner { display: none; }
 
+.process {
+  position: relative;
+  z-index: -1;
+}
+
+.process::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/process-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.process-item .item-icon {
+  margin-inline: auto;
+  filter: var(--shadow-1);
+}
+
+.process-item .item-title { margin-block: 20px 10px; }
 
 
 

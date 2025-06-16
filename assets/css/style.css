@@ -476,5 +476,67 @@ for header
 
   .grid-list { grid-template-columns: 1fr 1fr; }
 
+  .btn-secondary {
+    color: var(--text-white);
+    height: 52px;
+    border: 2px solid var(--border-blue-jeans);
+    padding-inline: 40px;
+  }
 
+  .btn-secondary:is(:hover, :focus-visible) { background-color: var(--bg-blue-jeans); }
+
+
+  .header .btn {
+    display: grid;
+    margin-inline: auto 30px;
+  }
+
+
+  .hero { padding-block: 180px; }
+
+  .hero-content { max-width: 560px; }
+
+  .hero .input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+
+  .hero .btn {
+    margin-block-start: 0;
+    min-width: max-content;
+  }
+
+
+  .hero-banner {
+    position: relative;
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  .hero .shape {
+    display: block;
+    position: absolute;
+    filter: var(--shadow-2);
+  }
+
+
+  .hero .shape-1 {
+    width: 13%;
+    top: 350px;
+    left: 80px;
+  }
+
+  .hero .shape-2 {
+    width: 16%;
+    top: 440px;
+    left: -20px;
+  }
+
+  .hero .shape-3 {
+    width: 20%;
+    bottom: -20px;
+    left: 80px;
+  }
 }

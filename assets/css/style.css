@@ -448,6 +448,33 @@ for header
 
 }
 
+/*
+  responsive large than 768px screen
+*/
+@media (min-width: 768px) {
+ 
 
 
 
+  :root {
+
+    --fontSize-1: 5.5rem;
+    --fontSize-2: 4rem;
+
+
+    --section-spacing: 150px;
+
+  }
+
+
+  .container { max-width: 720px; }
+
+  .section-text {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .grid-list { grid-template-columns: 1fr 1fr; }
+
+
+}
